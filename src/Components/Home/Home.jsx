@@ -7,12 +7,15 @@ import Services from '../Services/Services';
 const Home = () => {
     return (
         <div>
-            <Banner/>
+            <Banner />
 
             <Bio />
 
-            <h1 className='text-5xl font-semibold text-center'>Services</h1>
-            <Services />
+            {/* ------------------- Services Section ------------------ */}
+            <div className='my-10'>
+                <h1 className='text-5xl font-semibold text-center'>Services</h1>
+                <Services />
+            </div>
 
         </div>
     );

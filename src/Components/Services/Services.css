@@ -1,4 +1,7 @@
 .my-card {
     border: 1px solid tomato;
     padding: 15px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
