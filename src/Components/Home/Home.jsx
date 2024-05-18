@@ -3,19 +3,22 @@ import './Home.css';
 import Banner from '../Banner/Banner';
 import Bio from '../Bio/Bio';
 import Services from '../Services/Services';
+import Features from '../Features/Features';
 
 const Home = () => {
     return (
         <div>
+            {/* ------------------- Banner Section ------------------ */}
             <Banner />
 
+            {/* ------------------- Bio Section ------------------ */}
             <Bio />
 
             {/* ------------------- Services Section ------------------ */}
-            <div className='my-10'>
-                <h1 className='text-5xl font-semibold text-center'>Services</h1>
-                <Services />
-            </div>
+            <Services />
+
+            {/* ------------------- Features Section ------------------ */}
+            <Features />
 
         </div>
     );

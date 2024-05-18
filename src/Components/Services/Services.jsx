@@ -19,7 +19,10 @@ const Services = () => {
     };
 
     return (
-        <div className='relative'>
+        <div className='relative py-10'>
+
+            <h1 className='text-5xl font-semibold text-center my-10'>Services</h1>
+
             <div className='arrow-container w-full flex justify-between absolute z-10 top-[40%]'>
                 <div className="cursor-pointer text-7xl font-bold" onClick={goToPrevSlide}><GrPrevious /></div>
                 <div className="cursor-pointer text-7xl font-bold" onClick={goToNextSlide}><GrNext /></div>
