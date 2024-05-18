@@ -20,7 +20,7 @@ import person8 from '../../assets/person8.jpg'
 
 const OurTeam = () => {
     return (
-        <div className='p-10 space-y-10'>
+        <div className='p-10 space-y-10 min-h-screen'>
             <h1 className='text-center text-5xl'>Our Experts</h1>
 
             <Swiper

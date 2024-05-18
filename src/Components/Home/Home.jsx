@@ -5,6 +5,7 @@ import Bio from '../Bio/Bio';
 import Services from '../Services/Services';
 import Features from '../Features/Features';
 import OurTeam from '../OurTeam/OurTeam';
+import Portfolio from '../Portfolio/Portfolio';
 
 const Home = () => {
     return (
@@ -18,11 +19,16 @@ const Home = () => {
             {/* ------------------- Services Section ------------------ */}
             <Services />
 
+            {/* ------------------- Portfolio Section ------------------ */}
+            <Portfolio />
+
             {/* ------------------- Features Section ------------------ */}
             <Features />
 
             {/* ------------------- Our Team Section ------------------ */}
             <OurTeam />
+
+
 
         </div>
     );

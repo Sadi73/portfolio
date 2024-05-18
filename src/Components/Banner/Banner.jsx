@@ -4,7 +4,7 @@ import bannerImg from '../../assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className='banner'>
+        <div className='banner h-screen'>
             <img src={bannerImg} alt="" />
 
             <div className='banner-title absolute'>

@@ -9,7 +9,7 @@ import { SlSpeedometer } from 'react-icons/sl';
 
 const Features = () => {
     return (
-        <div className='bg-[#f8f9fa] p-10 space-y-10'>
+        <div className='bg-[#f8f9fa] p-10 space-y-10 min-h-screen'>
             <h1 className='text-center text-5xl'>Features</h1>
 
             <div className='grid grid-cols-4 gap-8'>
