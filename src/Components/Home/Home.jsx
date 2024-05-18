@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner';
 import Bio from '../Bio/Bio';
 import Services from '../Services/Services';
 import Features from '../Features/Features';
+import OurTeam from '../OurTeam/OurTeam';
 
 const Home = () => {
     return (
@@ -12,13 +13,16 @@ const Home = () => {
             <Banner />
 
             {/* ------------------- Bio Section ------------------ */}
-            <Bio />
+            {/* <Bio /> */}
 
             {/* ------------------- Services Section ------------------ */}
             <Services />
 
             {/* ------------------- Features Section ------------------ */}
             <Features />
+
+            {/* ------------------- Our Team Section ------------------ */}
+            <OurTeam />
 
         </div>
     );
