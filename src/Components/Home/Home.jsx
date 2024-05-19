@@ -9,6 +9,7 @@ import Portfolio from '../Portfolio/Portfolio';
 import DemoService from '../Services/DemoService';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Banner1 from '../Banner/Banner1';
 
 
 const Home = () => {
@@ -19,7 +20,8 @@ const Home = () => {
     return (
         <div>
             {/* ------------------- Banner Section ------------------ */}
-            <Banner />
+            {/* <Banner /> */}
+            <Banner1 />
 
             {/* ------------------- Bio Section ------------------ */}
             {/* <Bio /> */}

@@ -1,21 +1,18 @@
 import React from 'react';
-import './Banner.css';
-import bannerImg from '../../assets/banner.png'
-import backgroundImage from '../../assets/bannerBackground.jpg'
+import bgImage from '../../assets/bannerImg.jpg';
 import { ReactTyped } from 'react-typed';
 
-const Banner = () => {
+const Banner1 = () => {
     return (
-        <div className='banner h-screen'>
-            <img src={bannerImg} alt="" />
-
-            <div className='banner-title absolute'>
+        <div className='h-screen relative'
+            style={{ backgroundImage: `url(${bgImage})` }}
+        >
+            <div className=' bg-black bg-opacity-50 w-full h-full flex items-center justify-center'>
                 <ReactTyped
                     backSpeed={50}
                     strings={[
-                        " I'm Sadi M. Tanzim",
-                        "A Front-End Developer",
-                        "One Stop Service Solution",
+                        "Welcome!!! To...",
+                        "Your One Stop Service Solution",
                     ]}
                     typeSpeed={200}
                     typedRef={function noRefCheck() { }}
@@ -29,11 +26,8 @@ const Banner = () => {
                 />
             </div>
 
-
-
-
         </div>
     );
 };
 
-export default Banner;
+export default Banner1;
