@@ -6,9 +6,14 @@ import fullStackIcon from '../../assets/fullstack.jpg';
 import UiUxIcon from '../../assets/ui-ux.jpg';
 import mobileAppIcon from '../../assets/mobileapp.png';
 import { GrNext, GrPrevious } from 'react-icons/gr';
+import { AutoPlay } from '@egjs/flicking-plugins';
 
 const Services = () => {
     const flickingRef = useRef(null);
+
+    const plugins = [
+        new AutoPlay({ duration: 2000, direction: "NEXT", stopOnHover: true }),
+    ];
 
     const goToPrevSlide = () => {
         flickingRef.current.prev();
@@ -33,11 +38,12 @@ const Services = () => {
                     ref={flickingRef}
                     align="prev"
                     circular={true}
+                    plugins={plugins}
                     onMoveEnd={e => {
                         console.log(e);
                     }}
                 >
-                    <div className="panel">
+                    <div className="panel pb-10">
                         <div className='my-card'>
                             <img src={fullStackIcon} className='w-full h-64' alt="" />
                             <h1 className='text-2xl'>Full Stack Web Development</h1>
@@ -45,7 +51,7 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className="panel">
+                    <div className="panel pb-10">
                         <div className='my-card'>
                             <img src={UiUxIcon} className='w-full h-64' alt="" />
                             <h1 className='text-2xl'>UI/UX Design</h1>
@@ -53,7 +59,7 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className="panel">
+                    <div className="panel pb-10">
                         <div className='my-card'>
                             <img src={mobileAppIcon} className='w-full h-64' alt="" />
                             <h1 className='text-2xl'>Mobile App Development</h1>
