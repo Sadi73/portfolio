@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import Banner from '../Banner/Banner';
 import Bio from '../Bio/Bio';
@@ -7,8 +7,15 @@ import Features from '../Features/Features';
 import OurTeam from '../OurTeam/OurTeam';
 import Portfolio from '../Portfolio/Portfolio';
 import DemoService from '../Services/DemoService';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <div>
             {/* ------------------- Banner Section ------------------ */}
