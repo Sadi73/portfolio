@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.css';
 import bannerImg from '../../assets/banner.png'
+import { ReactTyped } from 'react-typed';
 
 const Banner = () => {
     return (
@@ -8,11 +9,28 @@ const Banner = () => {
             <img src={bannerImg} alt="" />
 
             <div className='banner-title absolute'>
-                <h1 className='text-7xl text-white font-bold'>I'm Sadi M. Tanzim</h1>
-                <p className='text-7xl text-white font-bold'>A Front-End Developer</p>
+                <ReactTyped
+                    backSpeed={50}
+                    strings={[
+                        " I'm Sadi M. Tanzim",
+                        "A Front-End Developer",
+                        "One Stop Service Solution",
+                    ]}
+                    typeSpeed={200}
+                    typedRef={function noRefCheck() { }}
+                    style={{
+                        fontFamily: 'Arial, sans-serif',
+                        fontSize: '72px',
+                        color: '#fff',
+                        fontWeight: 'bold'
+                    }}
+                    loop
+                />
             </div>
-            
-            
+
+
+
+
         </div>
     );
 };
