@@ -1,39 +1,39 @@
 import React from 'react';
 import PorjectCard from './PorjectCard';
+import projectImage1 from '../../assets/projects/1.png'
+import projectImage2 from '../../assets/projects/2.png'
+import projectImage3 from '../../assets/projects/3.png'
+import projectImage4 from '../../assets/projects/4.png'
+import projectImage5 from '../../assets/projects/5.png'
+import bgImage from '../../assets/projects/backgroundImage.jpg'
 
 const projects = [
     {
-        image: 'https://i.ibb.co/nDD34Mb/jute1.jpg',
+        image: projectImage1,
         title: 'Project Title',
         description: 'Project Description',
         additionalInfo: 'Project Details'
     },
     {
-        image: 'https://i.ibb.co/nDD34Mb/jute1.jpg',
+        image: projectImage2,
         title: 'Project Title',
         description: 'Project Description',
         additionalInfo: 'Project Details'
     },
     {
-        image: 'https://i.ibb.co/nDD34Mb/jute1.jpg',
+        image: projectImage3,
         title: 'Project Title',
         description: 'Project Description',
         additionalInfo: 'Project Details'
     },
     {
-        image: 'https://i.ibb.co/nDD34Mb/jute1.jpg',
+        image: projectImage4,
         title: 'Project Title',
         description: 'Project Description',
         additionalInfo: 'Project Details'
     },
     {
-        image: 'https://i.ibb.co/nDD34Mb/jute1.jpg',
-        title: 'Project Title',
-        description: 'Project Description',
-        additionalInfo: 'Project Details'
-    },
-    {
-        image: 'https://i.ibb.co/nDD34Mb/jute1.jpg',
+        image: projectImage5,
         title: 'Project Title',
         description: 'Project Description',
         additionalInfo: 'Project Details'
@@ -42,14 +42,16 @@ const projects = [
 
 const Portfolio = () => {
     return (
-        <div className='min-h-screen w-[80%] mx-auto'>
-            <h1 data-aos="" className='text-5xl font-semibold text-center my-10'>Our Projects</h1>
+        <div className='min-h-screen bg-opacity-50 px-20 '
+            style={{ backgroundImage: `url(${bgImage})` }}
+        >
+            <h1 data-aos="" className='text-5xl font-semibold text-center my-10 text-white'>Our Projects</h1>
 
             {
                 projects.map((project, index) =>
                     <div
                         data-aos={`${index % 2 === 0 ? 'fade-right' : 'fade-left'}`}
-                        className={`flex ${index % 2 === 0 ? 'flex-col-reverse' : ''} my-10`}
+                        className={`my-10 flex ${index % 2 === 0 ? 'flex-col-reverse' : ''} `}
                     >
                         <div className='grow h-20'>
                             {/* DESIGN PURPOSE ONLU */}
@@ -68,7 +70,6 @@ const Portfolio = () => {
 
                 )
             }
-            {/* </div> */}
 
         </div>
     );

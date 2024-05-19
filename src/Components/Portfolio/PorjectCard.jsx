@@ -5,7 +5,7 @@ const PorjectCard = ({ image, title, description, additionalInfo }) => {
     return (
         <div className="card">
             <div className="image-container">
-                <img src={image} alt={title} />
+                <img src={image} alt={title}  />
             </div>
             <div className="overlay">
                 <h3>{title}</h3>
