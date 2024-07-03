@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import './App.css'
-import Home from './Components/Home/Home'
+import Layout1Root from './Layouts/Layout1/Layout1Root'
 
 function App() {
 
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      {/* <LayOut1/> */}
+      <Layout1Root/>
 
     </>
   )
