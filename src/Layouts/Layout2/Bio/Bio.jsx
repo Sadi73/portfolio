@@ -1,6 +1,6 @@
 import React from 'react';
 import './Bio.css';
-import img from '../../assets/banner.png';
+import img from '../../../assets/banner.png';
 
 const Bio = () => {
     return (

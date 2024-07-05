@@ -1,9 +1,9 @@
 import React from "react";
 import Flicking from "@egjs/react-flicking";
 import { Perspective } from "@egjs/flicking-plugins";
-import fullStackIcon from '../../assets/fullstack.jpg';
-import UiUxIcon from '../../assets/ui-ux.jpg';
-import mobileAppIcon from '../../assets/mobileapp.png';
+import fullStackIcon from '../../../assets/fullstack.jpg';
+import UiUxIcon from '../../../assets/ui-ux.jpg';
+import mobileAppIcon from '../../../assets/mobileapp.png';
 
 const DemoService = () => {
     const plugins = [new Perspective({ rotate: 0.5 })];

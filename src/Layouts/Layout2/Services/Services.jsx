@@ -2,9 +2,9 @@ import React, { useRef } from 'react';
 import './Services.css';
 import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
-import fullStackIcon from '../../assets/fullstack.jpg';
-import UiUxIcon from '../../assets/ui-ux.jpg';
-import mobileAppIcon from '../../assets/mobileapp.png';
+import fullStackIcon from '../../../assets/fullstack.jpg';
+import UiUxIcon from '../../../assets/ui-ux.jpg';
+import mobileAppIcon from '../../../assets/mobileapp.png';
 import { GrNext, GrPrevious } from 'react-icons/gr';
 import { AutoPlay } from '@egjs/flicking-plugins';
 

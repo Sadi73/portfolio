@@ -1,11 +1,10 @@
 import React from 'react';
 import PorjectCard from './PorjectCard';
-import projectImage1 from '../../assets/projects/1.png'
-import projectImage2 from '../../assets/projects/2.png'
-import projectImage3 from '../../assets/projects/3.png'
-import projectImage4 from '../../assets/projects/4.png'
-import projectImage5 from '../../assets/projects/5.png'
-import bgImage from '../../assets/projects/backgroundImage.jpg'
+import projectImage1 from '../../../assets/projects/1.png'
+import projectImage2 from '../../../assets/projects/2.png'
+import projectImage3 from '../../../assets/projects/3.png'
+import projectImage4 from '../../../assets/projects/4.png'
+import projectImage5 from '../../../assets/projects/5.png'
 
 const projects = [
     {

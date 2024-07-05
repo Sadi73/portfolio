@@ -1,7 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import bannerImg from '../../assets/banner.png'
-import backgroundImage from '../../assets/bannerBackground.jpg'
+import bannerImg from '../../../assets/banner.png'
 import { ReactTyped } from 'react-typed';
 
 const Banner = () => {
