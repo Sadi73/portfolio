@@ -1,7 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import bannerImg from '../../assets/banner.png'
-import backgroundImage from '../../assets/bannerBackground.jpg'
+import bannerImg from '../../../assets/banner.png'
 import { ReactTyped } from 'react-typed';
 
 const Banner = () => {
@@ -13,18 +12,14 @@ const Banner = () => {
                 <ReactTyped
                     backSpeed={50}
                     strings={[
+                        " Hello There!!!",
                         " I'm Sadi M. Tanzim",
-                        "A Front-End Developer",
-                        "One Stop Service Solution",
+                        "A Full Stack Developer",
+                        // "Your One Stop Service Solution",
                     ]}
-                    typeSpeed={200}
+                    typeSpeed={100}
                     typedRef={function noRefCheck() { }}
-                    style={{
-                        fontFamily: 'Arial, sans-serif',
-                        fontSize: '72px',
-                        color: '#fff',
-                        fontWeight: 'bold'
-                    }}
+                    className='text-3xl lg:text-7xl text-white font-bold'
                     loop
                 />
             </div>

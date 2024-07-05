@@ -1,0 +1,8 @@
+.ant-drawer-content{
+    /* background: black !important; */
+    background: rgb(165, 165, 6, 100%) !important;
+}
+
+.ant-drawer-close{
+    display: none !important;
+}

@@ -20,11 +20,11 @@ const Home = () => {
     return (
         <div>
             {/* ------------------- Banner Section ------------------ */}
-            {/* <Banner /> */}
-            <Banner1 />
+            <Banner />
+            {/* <Banner1 /> */}
 
             {/* ------------------- Bio Section ------------------ */}
-            {/* <Bio /> */}
+            <Bio />
 
             {/* ------------------- Services Section ------------------ */}
             {/* <Services /> */}

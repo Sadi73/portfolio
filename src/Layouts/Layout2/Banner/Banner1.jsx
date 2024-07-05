@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '../../assets/bannerImg.jpg';
+import bgImage from '../../../assets/bannerImg.jpg';
 import { ReactTyped } from 'react-typed';
 
 const Banner1 = () => {

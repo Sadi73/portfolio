@@ -3,7 +3,6 @@ import FeatureCard from './FeatureCard';
 import { GrDocumentPdf, GrMultiple } from 'react-icons/gr';
 import { FaGoogle } from 'react-icons/fa';
 import { MdImportantDevices, MdSupportAgent } from 'react-icons/md';
-import { FcOnlineSupport } from 'react-icons/fc';
 import { PiToggleRightFill } from 'react-icons/pi';
 import { SlSpeedometer } from 'react-icons/sl';
 
