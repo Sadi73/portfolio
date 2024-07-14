@@ -55,7 +55,7 @@ const About = ({ openDrawer, setOpenDrawer }) => {
           </Space>
         }
       >
-        <div className='w-9/12 mx-auto space-y-10'>
+        <div className='md:w-9/12 mx-auto space-y-10'>
 
           <div>
             <p className='text-lg text-center'>Get to know me</p>
@@ -63,7 +63,7 @@ const About = ({ openDrawer, setOpenDrawer }) => {
           </div>
 
 
-          <div className='flex gap-10'>
+          <div className='md:flex gap-10'>
             <div className='w-11/12 '>
               <img src={aboutImg} className='h-full w-full rounded-lg' alt="" />
             </div>
@@ -107,8 +107,8 @@ const About = ({ openDrawer, setOpenDrawer }) => {
             </div>
           </div>
 
-          <h1 className='text-5xl text-center'>My Expertise</h1>
-          <div className='grid grid-cols-3 gap-5 my-10'>
+          <h1 className='text-3xl md:text-5xl text-center'>My Expertise</h1>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-5 my-10'>
             <div className="image-card" >
               <img src={mernImg} alt='' />
               <div className="overlay">MERN Development</div>
@@ -126,7 +126,7 @@ const About = ({ openDrawer, setOpenDrawer }) => {
 
           </div>
 
-          <h1 className='text-5xl text-center'>Technologies that I Use</h1>
+          <h1 className='text-3xl md:text-5xl text-center'>Technologies that I Use</h1>
 
           <div className='leading-7'>
             <h1><span className='font-semibold text-[#f0f0f0]'>Frontend: </span><span className='text-[#9f9f9f]'>HTML || CSS || Tailwind || JavaScript || React JS || Next JS</span></h1>

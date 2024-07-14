@@ -27,14 +27,14 @@ const Contact = ({ openDrawer, setOpenDrawer }) => {
           </Space>
         }
       >
-        <div className='w-9/12 mx-auto space-y-10'>
+        <div className='md:w-9/12 mx-auto space-y-10'>
           <div>
             <p className='text-lg text-center'>Feel free to contact me anytimes</p>
             <h1 className='text-5xl text-center'>Get in Touch
             </h1>
           </div>
 
-          <div className='flex justify-between'>
+          <div className='flex flex-col-reverse md:flex-row justify-between gap-10'>
             <div>
               <h1 className='text-3xl font-semibold'>Message Me</h1>
 

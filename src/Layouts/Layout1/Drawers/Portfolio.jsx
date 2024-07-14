@@ -55,13 +55,13 @@ const Portfolio = ({ openDrawer, setOpenDrawer }) => {
                     </Space>
                 }
             >
-                <div className='w-9/12 mx-auto space-y-10'>
+                <div className='md:w-9/12 mx-auto space-y-10'>
                     <div>
                         <p className='text-lg text-center'>Showcasing some of my best work</p>
                         <h1 className='text-5xl text-center'>PORTFOLIO</h1>
                     </div>
 
-                    <div className='grid grid-cols-3 gap-8'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                         {projects.map(project =>
                             <div className="image-card" >
                                 <img src={project.image} alt='' />

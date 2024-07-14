@@ -55,14 +55,14 @@ const Resume = ({ openDrawer, setOpenDrawer }) => {
                     </Space>
                 }
             >
-                <div className='w-9/12 mx-auto space-y-10'>
+                <div className='md:w-9/12 mx-auto space-y-10'>
                     <div>
                         <p className='text-lg text-center'>Check out my resume</p>
                         <h1 className='text-5xl text-center'>RESUME</h1>
                     </div>
 
-                    <div className='flex gap-10'>
-                        <div className='w-1/2 space-y-4'>
+                    <div className='md:flex gap-10'>
+                        <div className='md:w-1/2 space-y-4'>
                             <h3 className='text-3xl font-semibold'>Experience</h3>
                             <div className='bg-[#161616] py-5 pl-5'>
                                 <Steps
@@ -87,7 +87,7 @@ const Resume = ({ openDrawer, setOpenDrawer }) => {
                             </div>
                         </div>
 
-                        <div className='w-1/2 space-y-4'>
+                        <div className='md:w-1/2 space-y-4'>
                             <h3 className='text-xl font-semibold'>Education</h3>
                             <div className='bg-[#161616] py-5 pl-5'>
                                 <Steps
@@ -115,7 +115,7 @@ const Resume = ({ openDrawer, setOpenDrawer }) => {
 
                     <div>
                         <h3 className='text-3xl font-semibold'>My Skills</h3>
-                        <div className='grid grid-cols-6 gap-5 mt-10'>
+                        <div className='grid grid-cols-3 md:grid-cols-6 gap-5 mt-10'>
                             {skills.map(skill => <div className='relative flex items-center justify-center'>
                                 <img src={skill.background} alt="" />
                                 <div className='absolute flex flex-col justify-center items-center'>
