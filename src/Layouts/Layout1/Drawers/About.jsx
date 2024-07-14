@@ -6,6 +6,7 @@ import mernImg from '../../../assets/mern.png';
 import frontendImg from '../../../assets/frontend.png';
 import './About.css';
 import { IoMdClose } from 'react-icons/io';
+import jsPDF from 'jspdf';
 
 
 const About = ({ openDrawer, setOpenDrawer }) => {
@@ -13,6 +14,31 @@ const About = ({ openDrawer, setOpenDrawer }) => {
   const onClose = () => {
     setOpenDrawer(null);
   };
+
+  const generatePDF = () => {
+    const pdf = new jsPDF('p', 'mm', 'a4');
+    pdf.setFont("Lato-Regular", "normal");
+    pdf.setFontSize(16);
+    let positionX = 20;
+    let positionY = 20;
+
+    pdf.text(positionX, positionY, 'Sadi Muhammad Tanzim');
+    positionY += 5;
+
+    pdf.setFontSize(12);
+
+    pdf.text(positionX, positionY, 'saditanzim@gmail.com');
+    positionY += 5;
+
+    pdf.text(positionX, positionY, '+8801687192402');
+    positionY += 5;
+
+    pdf.text(positionX, positionY, 'https://www.linkedin.com/in/sadi-muhammad-tanzim-06b7b8163/');
+    positionY += 5;
+
+
+    pdf.save('Resume_Sadi Muhammad Tanzim.pdf');
+  }
 
   return (
     <>
@@ -65,7 +91,10 @@ const About = ({ openDrawer, setOpenDrawer }) => {
 
               <div className='flex justify-between items-center'>
                 <div>
-                  <button className='bg-[#009e66] px-3 py-2 rounded-xl font-semibold' >Download Resume</button>
+                  <button
+                    className='bg-[#009e66] px-3 py-2 rounded-xl font-semibold'
+                    onClick={generatePDF}
+                  >Download Resume</button>
                 </div>
 
                 <div className='flex gap-3 text-xl'>
