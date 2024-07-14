@@ -23,14 +23,14 @@ const Contact = ({ openDrawer, setOpenDrawer }) => {
         open={openDrawer === 'contact'}
         extra={
           <Space>
-            <button className='text-2xl' onClick={onClose}><IoMdClose /></button>
+            <button className='text-2xl absolute top-[100px] right-[20px] md:top-30 md:right-10 lg:top-10' onClick={onClose}><IoMdClose /></button>
           </Space>
         }
       >
-        <div className='md:w-9/12 mx-auto space-y-10'>
+        <div className='md:w-9/12 mx-auto space-y-10 mt-10'>
           <div>
-            <p className='text-lg text-center'>Feel free to contact me anytimes</p>
-            <h1 className='text-5xl text-center'>Get in Touch
+            <p className='md:text-lg text-center text-[#9f9f9f]'>Feel free to contact me anytimes</p>
+            <h1 className='text-2xl md:text-5xl text-center'>Get in Touch
             </h1>
           </div>
 
@@ -50,14 +50,14 @@ const Contact = ({ openDrawer, setOpenDrawer }) => {
             </div>
 
             <div>
-              <h1 className='text-3xl font-semibold'>Contact Info</h1>
-              <p>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
+              <h1 className='text-xl md:text-3xl font-semibold mb-3'>Contact Info</h1>
+              <p className='text-[#9f9f9f]'>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
 
-              <div className='flex items-center gap-5'>
+              <div className='flex items-center gap-5 my-5'>
                 <SiIonic className='text-3xl text-[#009e66]' />
                 <div>
                   <h1>Name</h1>
-                  <h1>Sadi Muhammad Tanzim</h1>
+                  <h1 className='text-[#9f9f9f]'>Sadi Muhammad Tanzim</h1>
                 </div>
               </div>
 
@@ -65,15 +65,15 @@ const Contact = ({ openDrawer, setOpenDrawer }) => {
                 <SiIonic className='text-3xl text-[#009e66]' />
                 <div>
                   <h1>Location</h1>
-                  <h1>Dhaka, Bangladesh</h1>
+                  <h1 className='text-[#9f9f9f]'>Dhaka, Bangladesh</h1>
                 </div>
               </div>
 
-              <div className='flex items-center gap-5'>
+              <div className='flex items-center gap-5 my-5'>
                 <SiIonic className='text-3xl text-[#009e66]' />
                 <div>
                   <h1>Call Me (or Whatsapp)</h1>
-                  <h1>+8801687192402</h1>
+                  <h1 className='text-[#9f9f9f]'>+8801687192402</h1>
                 </div>
               </div>
 
@@ -81,7 +81,7 @@ const Contact = ({ openDrawer, setOpenDrawer }) => {
                 <SiIonic className='text-3xl text-[#009e66]' />
                 <div>
                   <h1>Email</h1>
-                  <h1>saditanzim@gmail.com</h1>
+                  <h1 className='text-[#9f9f9f]'>saditanzim@gmail.com</h1>
                 </div>
               </div>
             </div>

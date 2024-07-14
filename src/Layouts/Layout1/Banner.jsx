@@ -5,8 +5,8 @@ import { ReactTyped } from 'react-typed';
 
 const Banner = () => {
     return (
-        <div className='banner h-screen'>
-            <img src={bannerImg} alt="" />
+        <div className='banner md:h-screen'>
+            <img src={bannerImg} alt="" className='w-full md:w-7/12'/>
 
             <div className='banner-title absolute'>
                 <ReactTyped

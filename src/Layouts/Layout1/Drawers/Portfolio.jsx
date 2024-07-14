@@ -51,14 +51,14 @@ const Portfolio = ({ openDrawer, setOpenDrawer }) => {
                 open={openDrawer === 'portfolio'}
                 extra={
                     <Space>
-                        <button className='text-2xl' onClick={onClose}><IoMdClose /></button>
+                        <button className='text-2xl absolute top-[100px] right-[20px] md:top-30 md:right-10 lg:top-10' onClick={onClose}><IoMdClose /></button>
                     </Space>
                 }
             >
-                <div className='md:w-9/12 mx-auto space-y-10'>
+                <div className='md:w-9/12 mx-auto space-y-10 mt-10'>
                     <div>
-                        <p className='text-lg text-center'>Showcasing some of my best work</p>
-                        <h1 className='text-5xl text-center'>PORTFOLIO</h1>
+                        <p className='md:text-lg text-center'>Showcasing some of my best work</p>
+                        <h1 className='text-2xl md:text-5xl text-center'>PORTFOLIO</h1>
                     </div>
 
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>

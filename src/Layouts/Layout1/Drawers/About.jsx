@@ -51,19 +51,19 @@ const About = ({ openDrawer, setOpenDrawer }) => {
         open={openDrawer === 'about'}
         extra={
           <Space>
-            <button className='text-2xl' onClick={onClose}><IoMdClose /></button>
+            <button className='text-2xl absolute top-[100px] right-[20px] md:top-30 md:right-10 lg:top-10' onClick={onClose}><IoMdClose /></button>
           </Space>
         }
       >
-        <div className='md:w-9/12 mx-auto space-y-10'>
+        <div className='md:w-9/12 mx-auto space-y-10 mt-10'>
 
           <div>
-            <p className='text-lg text-center'>Get to know me</p>
-            <h1 className='text-5xl text-center'>ABOUT ME</h1>
+            <p className='md:text-lg text-center'>Get to know me</p>
+            <h1 className='text-2xl md:text-5xl text-center'>ABOUT ME</h1>
           </div>
 
 
-          <div className='md:flex gap-10'>
+          <div className='flex flex-col md:flex-row gap-10'>
             <div className='w-11/12 '>
               <img src={aboutImg} className='h-full w-full rounded-lg' alt="" />
             </div>
