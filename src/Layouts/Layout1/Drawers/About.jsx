@@ -1,6 +1,6 @@
-import { Button, Drawer, Space } from 'antd';
+import { Drawer, Space } from 'antd';
 import React from 'react';
-import aboutImg from '../../../assets/person7.jpg';
+import aboutImg from '../../../assets/sadi.jpg';
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import mernImg from '../../../assets/mern.png';
 import frontendImg from '../../../assets/frontend.png';
@@ -18,7 +18,6 @@ const About = ({ openDrawer, setOpenDrawer }) => {
     <>
 
       <Drawer
-        // title='About'
         placement="bottom"
         size='large'
         className='text-white'
@@ -31,29 +30,34 @@ const About = ({ openDrawer, setOpenDrawer }) => {
         }
       >
         <div className='w-9/12 mx-auto space-y-10'>
-          <h1 className='text-5xl text-center'>ABOUT ME</h1>
+
+          <div>
+            <p className='text-lg text-center'>Get to know me</p>
+            <h1 className='text-5xl text-center'>ABOUT ME</h1>
+          </div>
+
 
           <div className='flex gap-10'>
-            <div className=''>
-              <img src={aboutImg} className='h-full' alt="" />
+            <div className='w-11/12 '>
+              <img src={aboutImg} className='h-full w-full rounded-lg' alt="" />
             </div>
 
             <div className='space-y-3'>
-              <h3 className='text-[#009e66] text-2xl font-semibold'>Who am I?</h3>
-              <h1 className=' text-3xl font-bold'>I am Sadi Muhammad Tanzim, a full stack developer</h1>
-              <p className=' leading-6'>I am a skilled software engineer specializing in full stack development, with expertise in React.js, Next.js, and the MERN stack. Currently, I am employed at a renowned software company where I contribute to developing and maintaining robust, scalable web applications. My passion for technology and continuous learning drives me to stay updated with the latest industry trends and best practices.</p>
+              <h3 className='text-[#009e66] text-2xl font-semibold'>Who am i?</h3>
+              <h1 className='text-[#f0f0f0] text-3xl font-bold'>I am Sadi Muhammad Tanzim, a full stack developer</h1>
+              <p className='text-[#9f9f9f] leading-7'>I am a skilled software engineer specializing in full stack development, with expertise in React JS, Next JS and the MERN stack. Currently, I am employed at a renowned software company where I contribute to developing and maintaining robust, scalable web applications. My passion for technology and continuous learning drives me to stay updated with the latest industry trends and best practices.</p>
 
               <hr />
 
               <div className='flex justify-between'>
-                <div className='space-y-2'>
-                  <h6><span className='font-bold'>Name</span>: Sadi Muhammad Tanzim</h6>
-                  <h6><span className='font-bold'>Phone</span>: +8801687192402</h6>
+                <div className='space-y-3'>
+                  <h6 className='text-[#9f9f9f]'><span className='font-bold text-[#f0f0f0]'>Name</span>: Sadi Muhammad Tanzim</h6>
+                  <h6 className='text-[#9f9f9f]'><span className='font-bold text-[#f0f0f0]'>Phone</span>: +8801687192402</h6>
                 </div>
 
-                <div className='space-y-2'>
-                  <h6><span className='font-bold'>Email</span>: saditanzim@gmail.com</h6>
-                  <h6><span className='font-bold'>From</span>: Dhaka, Bangladesh</h6>
+                <div className='space-y-3'>
+                  <h6 className='text-[#9f9f9f]'><span className='font-bold text-[#f0f0f0]'>Email</span>: saditanzim@gmail.com</h6>
+                  <h6 className='text-[#9f9f9f]'><span className='font-bold text-[#f0f0f0]'>From</span>: Dhaka, Bangladesh</h6>
                 </div>
               </div>
 
@@ -65,9 +69,9 @@ const About = ({ openDrawer, setOpenDrawer }) => {
                 </div>
 
                 <div className='flex gap-3 text-xl'>
-                  <FaGithub />
-                  <FaLinkedin />
-                  <FaFacebook />
+                  <a href="https://github.com/Sadi73"> <FaGithub /></a>
+                  <a href="https://www.linkedin.com/in/sadi-muhammad-tanzim-06b7b8163/"> <FaLinkedin /></a>
+                  <a href="https://www.facebook.com/sadi.tanzim/"> <FaFacebook /></a>
                 </div>
               </div>
 
@@ -94,6 +98,12 @@ const About = ({ openDrawer, setOpenDrawer }) => {
           </div>
 
           <h1 className='text-5xl text-center'>Technologies that I Use</h1>
+
+          <div className='leading-7'>
+            <h1><span className='font-semibold text-[#f0f0f0]'>Frontend: </span><span className='text-[#9f9f9f]'>HTML || CSS || Tailwind || JavaScript || React JS || Next JS</span></h1>
+            <h1><span className='font-semibold text-[#f0f0f0]'>Backend:</span> <span className='text-[#9f9f9f]'> Node JS || Express JS || MongoDB</span></h1>
+            <h1><span className='font-semibold text-[#f0f0f0]'>Misc:</span> <span className='text-[#9f9f9f]'>Google Firebase || JSON Web Token</span></h1>
+          </div>
           <div>
 
           </div>
