@@ -3,29 +3,36 @@ import React from 'react';
 import { IoMdClose } from 'react-icons/io';
 import project1 from '../../../assets/projects/1.png';
 import project2 from '../../../assets/projects/2.png';
+import project3 from '../../../assets/projects/3.png';
 import project4 from '../../../assets/projects/4.png';
 import project5 from '../../../assets/projects/5.png';
+// import project4 from '../../../assets/projects/4.png';
 
 const projects = [
     {
-        title: 'ABCD',
+        title: 'Bongo Explorer',
         image: project1,
-        path: 'https://saditanzim.netlify.app/'
+        path: 'https://bongo-explorer.web.app/'
     },
     {
-        title: 'ABCD',
+        title: 'Banu & Haque Homes',
         image: project2,
-        path: 'https://saditanzim.netlify.app/'
+        path: 'https://banu-and-haque-homes.web.app/'
     },
     {
-        title: 'ABCD',
+        title: "Esha's Craft",
+        image: project3,
+        path: 'https://esha-craft.web.app/'
+    },
+    {
+        title: 'EService BD',
         image: project4,
-        path: 'https://saditanzim.netlify.app/'
+        path: 'https://eservicebd-3433d.web.app/'
     },
     {
-        title: 'ABCD',
+        title: 'Smart Ticket',
         image: project5,
-        path: 'https://saditanzim.netlify.app/'
+        path: 'https://resilient-unicorn-a9662b.netlify.app/'
     },
 ];
 
@@ -65,9 +72,9 @@ const Portfolio = ({ openDrawer, setOpenDrawer }) => {
                         {projects.map(project =>
                             <div className="image-card" >
                                 <img src={project.image} alt='' />
-                                <div className="overlay text-2xl " >
+                                <div className="overlay  " >
                                     <div>
-                                        <h1>{project.title}</h1>
+                                        <h1 className='text-2xl'>{project.title}</h1>
                                         <p className='cursor-pointer' onClick={() => onclickHandler(project.path)}>Visit Here</p>
                                     </div>
                                 </div>
