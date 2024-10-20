@@ -22,15 +22,15 @@ import expressLogo from '../../../assets/icons/express.svg';
 import firebaseLogo from '../../../assets/icons/firebase.svg';
 
 const skills = [
-    { name: 'HTML', background: bg1, logo: htmlLogo },
-    { name: 'CSS', background: bg4, logo: cssLogo },
-    { name: 'JavaScript', background: bg9, logo: javascriptLogo },
-    { name: 'Tailwind CSS', background: bg5, logo: tailwindLogo },
-    { name: 'React', background: bg4, logo: reactLogo },
-    { name: 'Next', background: bg3, logo: nextLogo },
-    { name: 'Express', background: bg7, logo: expressLogo },
-    { name: 'MongoDb', background: bg7, logo: mongodbLogo },
-    { name: 'Firebase', background: bg9, logo: firebaseLogo },
+    { id: 1, name: 'HTML', background: bg1, logo: htmlLogo },
+    { id: 2, name: 'CSS', background: bg4, logo: cssLogo },
+    { id: 3, name: 'JavaScript', background: bg9, logo: javascriptLogo },
+    { id: 4, name: 'Tailwind CSS', background: bg5, logo: tailwindLogo },
+    { id: 5, name: 'React', background: bg4, logo: reactLogo },
+    { id: 6, name: 'Next', background: bg3, logo: nextLogo },
+    { id: 7, name: 'Express', background: bg7, logo: expressLogo },
+    { id: 8, name: 'MongoDb', background: bg7, logo: mongodbLogo },
+    { id: 9, name: 'Firebase', background: bg9, logo: firebaseLogo },
 ]
 
 const Resume = ({ openDrawer, setOpenDrawer }) => {
@@ -116,7 +116,7 @@ const Resume = ({ openDrawer, setOpenDrawer }) => {
                     <div>
                         <h3 className='text-3xl font-semibold'>My Skills</h3>
                         <div className='grid grid-cols-3 md:grid-cols-6 gap-5 mt-10'>
-                            {skills.map(skill => <div className='relative flex items-center justify-center'>
+                            {skills.map(skill => <div key={skill?.id} className='relative flex items-center justify-center'>
                                 <img src={skill.background} alt="" />
                                 <div className='absolute flex flex-col justify-center items-center'>
                                     <img className='w-12' src={skill.logo} alt="" />

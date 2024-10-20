@@ -1,18 +1,41 @@
 import { Button, Drawer, Input, Space } from 'antd';
-import React from 'react';
+import emailjs from 'emailjs-com';
+import React, { useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { SiIonic } from 'react-icons/si';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { LoadingOutlined } from '@ant-design/icons';
+import { Flex, Spin } from 'antd';
 
 const { TextArea } = Input;
 
 const Contact = ({ openDrawer, setOpenDrawer }) => {
 
+  const [loaderVisible, setLoaderVisible] = useState(false);
+
   const onClose = () => {
     setOpenDrawer(null);
   };
 
+  const sendEmail = (e) => {
+    setLoaderVisible(true);
+    e.preventDefault();
+
+    emailjs.sendForm('service_3aah45r', 'contact_form', e.target, '0-1bw53Lr5Av0C6Wl')
+      .then((result) => {
+        setLoaderVisible(false);
+        e.target.reset();
+        toast("Message Sent");
+      }, (error) => {
+         setLoaderVisible(false);
+        toast("Message Send failed. Try Again");
+      });
+  };
+
   return (
     <>
+      <ToastContainer />
 
       <Drawer
         // title='Contact'
@@ -38,15 +61,47 @@ const Contact = ({ openDrawer, setOpenDrawer }) => {
             <div>
               <h1 className='text-3xl font-semibold'>Message Me</h1>
 
-              <div className='flex gap-3 mt-5'>
-                <Input placeholder="Name" variant="filled" className='border border-white'/>
-                <Input placeholder="Email" variant="filled" className='border border-white'/>
-              </div>
+              <form onSubmit={sendEmail}>
+                <div className='flex gap-3 mt-5'>
+                  <Input
+                    variant="filled"
+                    className='border border-white text-white focus:text-black'
+                    placeholder="Name"
+                    name='to_name'
+                    required
+                  />
+                  <Input
+                    variant="filled"
+                    className='border border-white text-white focus:text-black'
+                    placeholder="Email"
+                    name='from_name'
+                    required
+                  />
+                </div>
 
-              <Input placeholder="Subject" variant="filled" className='my-3 border border-white' />
-              <TextArea rows={4} placeholder="Message" variant="filled" className='border border-white'/>
+                <Input
+                  variant="filled"
+                  className='my-3 border border-white text-white focus:text-black'
+                  placeholder="Subject"
+                />
+                <TextArea
+                  rows={4}
+                  variant="filled"
+                  className='border border-white text-white focus:text-black'
+                  name='message'
+                  placeholder="Message"
+                  required
+                />
 
-              <button className='bg-[#009e66] px-3 py-2 rounded-xl font-semibold mt-3'>Send Message</button>
+                {loaderVisible ?
+                  <Spin indicator={<LoadingOutlined spin />} size="large" /> :
+                  <button
+                    type='submit'
+                    className='bg-[#009e66] px-3 py-2 rounded-xl font-semibold mt-3'
+                  >Send Message</button>
+
+                }
+              </form>
             </div>
 
             <div>
