@@ -308,10 +308,16 @@ const About = ({ openDrawer, setOpenDrawer }) => {
 
               <div className='flex justify-between items-center'>
                 <div>
-                  <button
+                  {/* <button
                     className='bg-[#009e66] px-3 py-2 rounded-xl font-semibold'
                     onClick={generatePDF}
-                  >Download Resume</button>
+                  >Download Resume</button> */}
+
+                  <a
+                    href='https://drive.google.com/file/d/1iyuWQr4VQOHselHdfLCRCqpUGMZRTVfd/view?usp=sharing'
+                    target='_blank'
+                    className='bg-[#009e66] px-3 py-2 rounded-xl font-semibold hover:text-white'
+                  >Download Resume</a>
                 </div>
 
                 <div className='flex gap-3 text-xl'>
