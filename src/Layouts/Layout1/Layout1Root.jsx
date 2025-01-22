@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Banner from './Banner';
-import About from './Drawers/About';
-import Navbar from './Navbar';
-import Portfolio from './Drawers/Portfolio';
-import Resume from './Drawers/Resume';
-import Contact from './Drawers/Contact';
-import './Drawers/drawerStyles.css'
+import Banner from '../../components/Banner';
+import AboutDrawer from './Drawers/AboutDrawer';
+import ContactDrawer from './Drawers/ContactDrawer';
+import './Drawers/drawerStyles.css';
+import PortfolioDrawer from './Drawers/PortfolioDrawer';
+import ResumeDrawer from './Drawers/ResumeDrawer';
+import Navbar from '../../components/Navbar';
 
 const Layout1Root = () => {
     const [openDrawer, setOpenDrawer] = useState(null);
@@ -19,22 +19,22 @@ const Layout1Root = () => {
 
             <Banner />
 
-            <About
+            <AboutDrawer
                 openDrawer={openDrawer}
                 setOpenDrawer={setOpenDrawer}
             />
 
-            <Portfolio
+            <PortfolioDrawer
                 openDrawer={openDrawer}
                 setOpenDrawer={setOpenDrawer}
             />
 
-            <Resume
+            <ResumeDrawer
                 openDrawer={openDrawer}
                 setOpenDrawer={setOpenDrawer}
             />
 
-            <Contact
+            <ContactDrawer
                 openDrawer={openDrawer}
                 setOpenDrawer={setOpenDrawer}
             />

@@ -1,21 +1,20 @@
 import React from 'react';
-import './Banner.css';
-import bannerImg from '../../assets/banner.png'
+import bannerImg from '../assets/banner.png'
 import { ReactTyped } from 'react-typed';
 
 const Banner = () => {
     return (
-        <div className='banner md:h-screen'>
-            <img src={bannerImg} alt="" className='w-full md:w-7/12'/>
+        <div className='banner md:h-screen bg-[#A8A80E]'>
+            <img src={bannerImg} alt="" className='w-full md:w-7/12 absolute bottom-0'/>
 
-            <div className='banner-title absolute'>
+            <div className='banner-title absolute top-1/3 right-[10%]'>
                 <ReactTyped
                     backSpeed={50}
                     strings={[
                         " Hello There!!!",
                         " I'm Sadi M. Tanzim",
                         "A Full Stack Developer",
-                        // "Your One Stop Service Solution",
+                        "Your One Stop Service Solution",
                     ]}
                     typeSpeed={100}
                     typedRef={function noRefCheck() { }}
