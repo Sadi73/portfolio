@@ -1,5 +1,6 @@
 import React from 'react';
 import { projects } from '../../utils/projects';
+import TitleContainer from './TitleContainer';
 
 const Portfolio = () => {
 
@@ -8,11 +9,12 @@ const Portfolio = () => {
     };
 
     return (
-        <div className='md:w-9/12 mx-auto space-y-10 mt-10'>
-            <div className='text-[#f0f0f0]'>
-                <p className='md:text-lg text-center'>Showcasing some of my best work</p>
-                <h1 className='text-2xl md:text-5xl text-center'>PORTFOLIO</h1>
-            </div>
+        <div className='md:w-9/12 mx-auto space-y-10'>
+
+            <TitleContainer
+                title='Portfolio'
+                subTitle='Showcasing some of my best work'
+            />
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                 {projects.map(project =>

@@ -1,6 +1,6 @@
 import { Drawer, Space } from 'antd';
 import React from 'react';
-import { IoMdClose } from 'react-icons/io';
+import DrawerCloseButton from '../../../components/DrawerCloseButton';
 import Portfolio from '../../../components/Portfolio';
 
 const PortfolioDrawer = ({ openDrawer, setOpenDrawer }) => {
@@ -19,7 +19,7 @@ const PortfolioDrawer = ({ openDrawer, setOpenDrawer }) => {
             open={openDrawer === 'portfolio'}
             extra={
                 <Space>
-                    <button className='text-2xl absolute top-[100px] right-[20px] md:top-30 md:right-10 lg:top-10' onClick={onClose}><IoMdClose /></button>
+                    <DrawerCloseButton onClose={onClose} />
                 </Space>
             }
         >

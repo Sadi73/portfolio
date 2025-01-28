@@ -1,14 +1,16 @@
 import { Steps } from 'antd';
 import React from 'react';
 import { skills } from '../../utils/skills';
+import TitleContainer from './TitleContainer';
 
 const Resume = () => {
     return (
-        <div className='md:w-9/12 mx-auto space-y-10 mt-10'>
-            <div className='text-[#f0f0f0]'>
-                <p className='md:text-lg text-center'>Check out my resume</p>
-                <h1 className='text-2xl md:text-5xl text-center'>RESUME</h1>
-            </div>
+        <div className='md:w-9/12 mx-auto space-y-10'>
+
+            <TitleContainer
+                title='Resume'
+                subTitle='Check out my resume'
+            />
 
             <div className='md:flex gap-10'>
                 <div className='md:w-1/2 space-y-4'>

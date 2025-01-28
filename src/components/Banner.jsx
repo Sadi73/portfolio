@@ -4,8 +4,8 @@ const Banner = () => {
     return (
         <div className='md:h-screen bg-black'>
             <div className='absolute top-1/3 left-[10%] text-white space-y-2 font-montserrat'>
-                <div class="relative">
-                    <div class="w-32 h-8 border-t border-l"></div>
+                <div className="relative">
+                    <div className="w-32 h-8 border-t border-l"></div>
                     <p className='absolute -top-[12px] left-[140px] font-semibold'>I AM</p>
                 </div>
                 <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold '>Sadi M. Tanzim</h1>

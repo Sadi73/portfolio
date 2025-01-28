@@ -13,7 +13,6 @@ const Layout1Root = () => {
     return (
         <div>
             <Navbar
-                openDrawer={openDrawer}
                 setOpenDrawer={setOpenDrawer}
             />
 
