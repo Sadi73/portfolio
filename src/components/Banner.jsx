@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='md:h-screen bg-black'>
+        <div className='h-screen bg-black'>
             <div className='absolute top-1/3 left-[10%] text-white space-y-2 font-montserrat'>
                 <div className="relative">
                     <div className="w-32 h-8 border-t border-l"></div>
